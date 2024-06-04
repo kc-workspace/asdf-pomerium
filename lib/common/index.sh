@@ -32,5 +32,3 @@ export KC_ASDF_APP_CMDS KC_ASDF_APP_REPO
 source "${KC_ASDF_PLUGIN_PATH:?}/lib/common/internal.sh" || exit 1
 # shellcheck source-path=SCRIPTDIR/defaults.sh
 source "${KC_ASDF_PLUGIN_PATH:?}/lib/common/defaults.sh" || exit 1
-
-kc_asdf_commands go

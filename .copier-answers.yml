@@ -32,7 +32,7 @@ checksum_enabled: true
 checksum_url: https://github.com/pomerium/cli/releases/download/v{version}/pomerium-cli_checksums.txt
 custom_bin_paths: bin
 custom_non_stable_version: (-src|-dev|-latest|-stm|[-\.]rc|-alpha|-beta|[-\.]pre|-next|snapshot|master)
-custom_require_commands: go
+custom_require_commands: ''
 download_url: https://github.com/pomerium/cli/releases/download/v{version}/pomerium-cli-{os}-{arch}.tar.gz
 gpg_enabled: false
 install_map_enabled: true
