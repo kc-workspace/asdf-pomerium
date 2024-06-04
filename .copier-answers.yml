@@ -1,0 +1,66 @@
+---
+## Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v2.5.1
+_src_path: gh:kc-workspace/asdf-plugin-template.git
+addon_yaml:
+    archive: true
+    checksum: true
+    download: true
+    fetch: true
+    git: true
+    github: true
+    gpg: false
+    help: true
+    install: true
+    package: false
+    python: false
+    system: true
+    tags: true
+    version: false
+app_desc: it's used to generate encrypted and authenticated connections for services
+    that are not accessed through a web browser
+app_name: pomerium-cli
+app_repo: https://github.com/pomerium/cli
+app_type: standalone
+app_website: https://www.pomerium.com
+archive_conf_path: ''
+archive_conf_strip: 0
+archive_enabled: true
+archive_regex: (\\.tar\\.gz|\\.tgz|\\.zip)$
+checksum_conf_algorithm: 256
+checksum_enabled: true
+checksum_url: https://github.com/pomerium/cli/releases/download/v{version}/pomerium-cli_checksums.txt
+custom_bin_paths: bin
+custom_non_stable_version: (-src|-dev|-latest|-stm|[-\.]rc|-alpha|-beta|[-\.]pre|-next|snapshot|master)
+custom_require_commands: go
+download_url: https://github.com/pomerium/cli/releases/download/v{version}/pomerium-cli-{os}-{arch}.tar.gz
+gpg_enabled: false
+install_map_enabled: true
+install_map_method: move
+install_map_yaml:
+    pomerium-cli: bin/pomerium-cli
+package_enabled: false
+plugin_author: Kamontat Chantrachirathumrong
+plugin_name: asdf-pomerium
+plugin_org: kc-workspace
+plugin_repo: https://github.com/kc-workspace/asdf-pomerium.git
+source_enabled: true
+source_type: git
+source_url: https://github.com/pomerium/cli.git
+sys_arch_enabled: true
+sys_arch_yaml:
+    aarch64*: arm64
+    armv5*: armv5
+    armv6*: armv6
+    armv7*: armv7
+    i386: '386'
+    i686: '386'
+    powerpc64le: ppc64le
+    ppc64le: ppc64le
+    x86: '386'
+    x86_64: amd64
+sys_ext_enabled: false
+sys_os_enabled: false
+test_cmd_args: version
+version_file_enabled: false
+version_prefix: v
